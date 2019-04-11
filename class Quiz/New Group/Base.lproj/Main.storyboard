@@ -40,7 +40,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="please in put the punishment that th student must right below " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dcK-ap-JWs">
-                                <rect key="frame" x="67" y="113" width="240" height="128"/>
+                                <rect key="frame" x="67" y="113" width="240" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -60,9 +60,15 @@
                                 <state key="normal" title="enter"/>
                                 <connections>
                                     <action selector="enterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2wS-QO-Ri2"/>
-                                    <segue destination="YmW-gl-ZTC" kind="presentation" id="mBQ-D9-rtJ"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6v6-ye-ZXt">
+                                <rect key="frame" x="67" y="227" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -72,26 +78,12 @@
                         <outlet property="stepperButtonPressed" destination="mCx-1r-Bdp" id="Xgb-Hf-H02"/>
                         <outlet property="stepperOutlet" destination="mCx-1r-Bdp" id="wi7-2A-cLA"/>
                         <outlet property="stepperText" destination="oqS-yC-JKe" id="Jtg-OF-z3H"/>
+                        <outlet property="studentText" destination="6v6-ye-ZXt" id="GMU-eY-EXa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="134" y="134"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="V5b-ZG-SF8">
-            <objects>
-                <viewController id="YmW-gl-ZTC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="u2Y-VS-xcd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="LaB-S8-mrp"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5cZ-5L-Dhj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1002" y="134"/>
+            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

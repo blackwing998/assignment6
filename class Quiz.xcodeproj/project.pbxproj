@@ -56,12 +56,20 @@
 			children = (
 				3D656DEB225FC780000DF9BB /* AppDelegate.swift */,
 				3D656DED225FC780000DF9BB /* ViewController.swift */,
-				3D656DEF225FC780000DF9BB /* Main.storyboard */,
+				3D656DFD225FD70D000DF9BB /* New Group */,
 				3D656DF2225FC781000DF9BB /* Assets.xcassets */,
 				3D656DF4225FC781000DF9BB /* LaunchScreen.storyboard */,
 				3D656DF7225FC781000DF9BB /* Info.plist */,
 			);
 			path = "class Quiz";
+			sourceTree = "<group>";
+		};
+		3D656DFD225FD70D000DF9BB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				3D656DEF225FC780000DF9BB /* Main.storyboard */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var stepperOutlet: UIStepper!
     @IBOutlet weak var stepperButtonPressed: UIStepper!
     @IBOutlet weak var punishText: UITextField!
+    @IBOutlet weak var studentText: UITextView!
     override func viewDidLoad() {
        
         super.viewDidLoad()
@@ -32,9 +33,10 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func restButtonPressed(_ sender: Any) {
-        stepperOutlet.value = 0
-        stepperText.text = ""
+        stepperOutlet.value = 1
+        stepperText.text = "1"
         punishText.text = ""
+        studentText.text = ""
     }
     
     @IBAction func enterButtonPressed(_ sender: Any) {
