@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var placeHolderText:String = ""
     @IBOutlet weak var stepperText: UITextField!
     @IBOutlet weak var stepperOutlet: UIStepper!
     @IBOutlet weak var stepperButtonPressed: UIStepper!
@@ -40,7 +40,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func enterButtonPressed(_ sender: Any) {
-    }
+        writeStatement(numberOftimes: Int(stepperOutlet.value))
+        studentText.text = placeHolderText
     
     
 }
+    func writeStatement (numberOftimes: Int){
+        for _ in 1...numberOftimes{
+            placeHolderText += punishText.text! + "\n"
+        }
+    }
+            
+        }
+
